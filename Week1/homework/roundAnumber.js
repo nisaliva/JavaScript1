@@ -8,3 +8,4 @@ console.log(a);
 
 let highestOfTwo = Math.max (z,a);
 console.log(highestOfTwo);
+
