@@ -1,14 +1,10 @@
 'use strict';
 
 function gradeCalculator(score) {
-
-// Check first for the invalid score! 
-if(typeof score !== 'number' || score < 0 || score > 100)
-    return "INVALID SCORE";
     
 var grade = "";
     
-switch (typeof score === 'number'){
+switch (true){
     case score >= 90 && score <= 100:
         grade='A';
         break;

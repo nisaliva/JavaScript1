@@ -1,14 +1,11 @@
 'use strict';
 
 let drinkTray = [];
-
-for(let i = 0; i < 2; i++){
-  
-    drinkTray.push('cola');
-    drinkTray.push('lemonade');
+const drinkTypes = ["cola", "lemonade", "water"];
+for (let i = 0; i < 5; i++) {
+    drinkTray.push(drinkTypes[i]);
+    if (i< 2) { 
+        drinkTray.push(drinkTypes[i]);
+    }
 }
-for(let i = 0; i < 1; i++){
-    drinkTray.push('water');
-}
-    
 console.log('"Hey guys, I brought a ' + drinkTray +'!"');

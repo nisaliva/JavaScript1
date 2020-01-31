@@ -14,17 +14,14 @@ let theReadingList = [
     alreadyRead: true
     }
 ] ;
-for (let i = 0; i < theReadingList.length; i++){
-    let myReadingList = theReadingList[i];
-    console.log('"' + myReadingList.title + '" by ' + myReadingList.author); 
-}
 
-for (let i = 0; i < theReadingList.length; i++) {
-    let myReadingList = theReadingList[i];
-    let listInfo = myReadingList.title + '" by ' + myReadingList.author;
-    if (myReadingList.alreadyRead) {
-      console.log('You already read "' + listInfo);
-    } else {
-      console.log('You still need to read "' + listInfo);
-    }
+for (let i = 0; i < theReadingList.length; i++){
+  let myReadingList = theReadingList[i];
+  console.log('"' + myReadingList.title + '" by ' + myReadingList.author); 
+  let listInfo = myReadingList.title + '" by ' + myReadingList.author;
+  if (myReadingList.alreadyRead) {
+    console.log('You already read "' + listInfo);
+  } else {
+    console.log('You still need to read "' + listInfo);
+  }
 }
