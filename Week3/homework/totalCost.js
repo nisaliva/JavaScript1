@@ -10,8 +10,8 @@ const cartForParty = {
 function calculateTotalPrice(){
     let sum = 0 ;
     for (let n of Object.values(cartForParty))
-       sum += n;
-return sum;
+        sum += n;
+    return sum;
 }
 
 console.log(calculateTotalPrice());

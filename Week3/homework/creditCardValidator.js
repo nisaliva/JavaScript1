@@ -2,7 +2,7 @@
 
 function creditCardValidator(cardNumber){
 
-    // The cardNumber must be 16 digits,
+    // The cardNumber must be 16 digits, check the cardNumber have 16 digits or not.
     if(cardNumber.length !== 16){
       return 'The credit card numbers are invalid';
     }
@@ -24,14 +24,14 @@ function creditCardValidator(cardNumber){
     // The creditNumber must have at least two different digits (all of the digits cannot be the same)
     let obj = {};
     for(let i = 0; i < cardNumber.length; i++){
-      obj[cardNumber[i]] = true;
+        if (cardNumber[0] !== cardNumber[i]){
+            return 'The credit card numbers are valid';
+        }
     }
-    if(Object.keys(obj).length < 2){
-      return 'The credit card numbers are invalid';
-    }
-  
+    return 'The credit card numbers are invalid';
+
     // The final digit must be even
-    if(cardNumber[cardNumber.length - 1] % 2 !== 0){
+    if(currentNumber[currentNumber.length - 1] % 2 !== 0){
       return 'The credit card numbers are invalid';
     }
   
